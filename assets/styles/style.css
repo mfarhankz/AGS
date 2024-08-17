@@ -1858,11 +1858,11 @@ progress {
   --bs-table-color-state: initial;
   --bs-table-bg-state: initial;
   --bs-table-color: var(--bs-emphasis-color);
-  --bs-table-bg: var(--bs-body-bg);
+  --bs-table-bg: transparent !important;
   --bs-table-border-color: var(--bs-border-color);
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: var(--bs-emphasis-color);
-  --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+  --bs-table-striped-bg: #ecc35c;
   --bs-table-active-color: var(--bs-emphasis-color);
   --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
   --bs-table-hover-color: var(--bs-emphasis-color);
@@ -12102,10 +12102,13 @@ header .navbar .flag-dropdown .dropdown-menu a {
   color: #112130;
   font-family: "Hind Madurai";
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 header .navbar .flag-dropdown .dropdown-menu img {
   height: 28px;
   width: 28px;
+  margin-right: 5px;
 }
 
 .main_menu {
@@ -12121,7 +12124,6 @@ header .navbar .flag-dropdown .dropdown-menu img {
   padding: 8px;
 }
 .main_menu .navbar-nav li {
-  padding: 8px 20px;
   transition: background 0.3s ease, border-radius 0.3s ease;
   position: relative;
   margin-left: 40px;
@@ -12189,9 +12191,9 @@ footer p {
 .backdrop {
   border-radius: 15px;
   width: calc(100% - 30px);
-  background-color: #21256E;
+  background-color: #21256e;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  height: 60vh;
+  height: 75vh;
   position: absolute;
   z-index: 0;
   top: 42px;
@@ -12201,11 +12203,11 @@ footer p {
 .side_panel {
   width: 330px;
   border-radius: 15px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 25px 20px;
   margin-left: 25px;
-  height: calc(100vh - 225px);
+  height: calc(100vh - 10px);
 }
 .side_panel .rounded {
   border-radius: 50% !important;
@@ -12275,7 +12277,7 @@ footer p {
   margin-bottom: 25px;
 }
 .content_panel .heading h6, .content_panel .heading .h6 {
-  color: #EEB21E;
+  color: #eeb21e;
   font-size: 22px;
   font-style: italic;
   font-weight: 700;
@@ -12284,7 +12286,7 @@ footer p {
   margin: 0;
 }
 .content_panel .heading h3, .content_panel .heading .h3 {
-  color: #FFF;
+  color: #fff;
   font-size: 52px;
   font-style: normal;
   font-weight: 700;
@@ -12296,7 +12298,7 @@ footer p {
   align-items: center;
 }
 .content_panel .heading h3 .badge, .content_panel .heading .h3 .badge {
-  color: #FFF !important;
+  color: #fff !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -12305,7 +12307,7 @@ footer p {
   margin-left: 15px;
 }
 .content_panel .heading p {
-  color: #FFF;
+  color: #fff;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -12315,7 +12317,7 @@ footer p {
 }
 .content_panel .white_box {
   border-radius: 15px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.24);
   display: flex;
   align-items: center;
@@ -12349,4 +12351,419 @@ footer p {
   top: 5px;
   left: -7px;
   opacity: 0.15;
+}
+
+.license-container {
+  padding: 10px 15px 25px;
+  border-radius: 15px;
+  border: 1px #EEB21E;
+  background: #EEB21E;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.license-container h4, .license-container .h4 {
+  color: #FFF;
+  font-family: "Hind Madurai";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  margin: 0;
+}
+.license-container h6, .license-container .h6 {
+  color: #FFF;
+  font-family: "Hind Madurai";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.46px;
+  margin: 0;
+  margin-top: -10px;
+}
+.license-container table {
+  background: #EEB21E !important;
+  margin-top: 30px;
+}
+.license-container table .table-striped {
+  background: #ecc35c !important;
+}
+.license-container table tr {
+  border: none !important;
+}
+.license-container table tr th {
+  color: #112130;
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  border: none !important;
+}
+.license-container table tr td {
+  color: #112130;
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.48px;
+  border: none !important;
+}
+
+.inbox-container {
+  padding: 20px 20px 10px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.inbox-container i {
+  font-size: 31px;
+  margin-right: 6px;
+}
+.inbox-container h4, .inbox-container .h4 {
+  color: #112130;
+  font-family: "Hind Madurai";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.92px;
+}
+.inbox-container .inbox {
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inbox-container .inbox .email-img {
+  position: relative;
+  z-index: 10 !important;
+  margin-bottom: 15px;
+}
+.inbox-container .inbox .email-img::after {
+  content: "";
+  width: 82px;
+  height: 82px;
+  background-color: #EEB21E;
+  display: block;
+  border-radius: 50px;
+  position: absolute;
+  bottom: -10px;
+  left: 25px;
+  z-index: -10;
+  opacity: 0.15;
+}
+.inbox-container .inbox h6, .inbox-container .inbox .h6 {
+  color: #112130;
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.32px;
+  margin-bottom: 0;
+}
+.inbox-container .inbox p {
+  color: #112130;
+  font-family: "Hind Madurai";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.32px;
+  margin-bottom: 0;
+  margin-top: -13px;
+}
+
+.info-container {
+  margin: 0 auto;
+  gap: 2%;
+}
+.info-container .col-6 {
+  width: 49%;
+}
+
+@media (min-width: 1200px) and (max-width: 3000px) {
+  .main_menu .navbar-nav li {
+    padding: 8px 10px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main_menu .navbar-nav li {
+    padding: 8px 10px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-nav .avatar-user {
+    font-size: 0 !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  header {
+    width: -webkit-fill-available !important;
+    padding-right: 10px !important;
+  }
+  header .top-nav .avatar-user {
+    font-size: 0 !important;
+  }
+  header .top-nav .navbar-brand img {
+    height: 35px !important;
+    width: 130px !important;
+  }
+  header .top-nav ul {
+    width: 200px !important;
+  }
+  header .top-nav ul li {
+    margin-left: 20px !important;
+    font-size: 14px !important;
+  }
+  header .top-nav ul li::before {
+    left: -10px !important;
+  }
+  .mobile-menu {
+    width: 95% !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .mobile-menu .navbar-toggler {
+    padding: 14px !important;
+    width: 100%;
+    position: relative;
+  }
+  .mobile-menu .navbar-toggler:after {
+    content: "Y";
+    font-family: "ags";
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 0;
+    border: none !important;
+    top: 12px;
+    position: absolute;
+    line-height: 24px;
+    right: 14px;
+  }
+  .mobile-menu .navbar-toggler span {
+    color: #112130;
+    font-family: "Hind Madurai";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .mobile-menu .navbar-toggler span i {
+    font-size: 18px;
+    display: flex;
+    margin-right: 10px;
+  }
+  .mobile-menu .main_menu {
+    box-shadow: none !important;
+  }
+  .mobile-menu .main_menu .navbar-nav {
+    align-items: left !important;
+    justify-content: start !important;
+    flex-direction: column !important;
+  }
+  .mobile-menu .main_menu .navbar-nav li {
+    margin-left: 0 !important;
+    text-align: left !important;
+    width: 100%;
+  }
+  .mobile-menu .main_menu .navbar-nav li::before {
+    display: none !important;
+  }
+  .mobile-menu .main_menu .navbar-nav li a {
+    font-size: 14px !important;
+    font-weight: normal;
+    padding: 8px 20px;
+  }
+}
+@media (min-width: 250px) and (max-width: 575px) {
+  header {
+    padding-right: 10px !important;
+  }
+  header .top-nav .avatar-user {
+    font-size: 0 !important;
+  }
+  header .top-nav .navbar-brand img {
+    height: 35px !important;
+    width: 110px !important;
+  }
+  header .top-nav ul {
+    width: 190px !important;
+  }
+  header .top-nav ul li {
+    margin-left: 20px !important;
+    font-size: 14px !important;
+  }
+  header .top-nav ul li::before {
+    left: -10px !important;
+  }
+  .mobile-menu {
+    width: 95% !important;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .mobile-menu .navbar-toggler {
+    padding: 14px !important;
+    width: 100%;
+    position: relative;
+  }
+  .mobile-menu .navbar-toggler:after {
+    content: "Y";
+    font-family: "ags";
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 0;
+    border: none !important;
+    top: 12px;
+    position: absolute;
+    line-height: 24px;
+    right: 14px;
+  }
+  .mobile-menu .navbar-toggler span {
+    color: #112130;
+    font-family: "Hind Madurai";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .mobile-menu .navbar-toggler span i {
+    font-size: 18px;
+    display: flex;
+    margin-right: 10px;
+  }
+  .mobile-menu .main_menu {
+    box-shadow: none !important;
+  }
+  .mobile-menu .main_menu .navbar-nav {
+    align-items: left !important;
+    justify-content: start !important;
+    flex-direction: column !important;
+  }
+  .mobile-menu .main_menu .navbar-nav li {
+    margin-left: 0 !important;
+    text-align: left !important;
+    width: 100%;
+  }
+  .mobile-menu .main_menu .navbar-nav li::before {
+    display: none !important;
+  }
+  .mobile-menu .main_menu .navbar-nav li a {
+    font-size: 14px !important;
+    font-weight: normal;
+    padding: 8px 20px;
+  }
+  .side_panel {
+    width: 100%;
+    padding: 25px 20px;
+    margin-left: 0 !important;
+    height: 940px !important;
+  }
+  .side_panel .heading {
+    margin-top: 10px;
+  }
+  .side_panel .heading h6, .side_panel .heading .h6 {
+    color: #EEB21E;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.32px;
+    margin-bottom: 0 !important;
+  }
+  .side_panel .heading h3, .side_panel .heading .h3 {
+    color: #112130;
+    font-family: "Hind Madurai";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    position: relative;
+    margin-bottom: 0 !important;
+  }
+  .side_panel .heading h3 span, .side_panel .heading .h3 span {
+    color: #FFF;
+    font-family: "Hind Madurai";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    position: absolute;
+    top: -35px;
+    right: 5px;
+  }
+  .side_panel .heading p {
+    color: #112130;
+    font-family: "Hind Madurai";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.52px;
+    margin-bottom: 0;
+    margin-top: -10px;
+  }
+  .side_panel .profile_detail {
+    padding: 0;
+    margin: 25px 0 0 0;
+    height: calc(100% - 228px);
+    overflow-x: scroll;
+  }
+  .side_panel .profile_detail li {
+    padding: 12px 0;
+  }
+  .side_panel .profile_detail li i {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .side_panel .profile_detail li div {
+    display: flex;
+    flex-direction: column;
+    color: #112130;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    margin-left: 24px;
+    position: relative;
+  }
+  .side_panel .profile_detail li div::before {
+    content: "";
+    opacity: 0.1;
+    background: #112130;
+    height: 18px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    left: -12px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .side_panel .profile_detail li div span {
+    color: rgba(17, 33, 48, 0.55);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
 }/*# sourceMappingURL=style.css.map */

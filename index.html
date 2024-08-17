@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar top-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/logo.svg" alt="logo" />
@@ -22,7 +22,6 @@
                             <i class="icon-lamp-1"></i>
                             <span> 4 </span>
                             </d>
-
                     </li>
                     <li>
 
@@ -145,7 +144,7 @@
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <img src="./assets/images/avatar.svg" class="me-2 rounded-5" alt="user avatar" />
-                                <span> AA-3352 / Aaron K Armstrong </span>
+                                <span class="avatar-user"> AA-3352 / Aaron K Armstrong </span>
                             </button>
                             <ul class="dropdown-menu right">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -158,53 +157,72 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <div class="main_menu">
-            <ul class="navbar-nav d-flex">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-teacher"></i> Recruiting</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-calendar-3"></i>Scheduling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-percentage-square"></i>
-                        Accounting Payroll</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-briefcase"></i>
-                        Human Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-messages"></i>
-                        Communication / IT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-task-square"></i>
-                        Compliance/Legal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="icon-truck-fast"></i>
-                        Dispatch</a>
-                </li>
-            </ul>
+    <div class="container-fluid mobile-menu">
+        <!-- Toggle Button -->
+        <button class="navbar-toggler d-lg-none d-xl-none d-md-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span>
+                <i class="icon-element-3"></i>
+                Menu
+            </span>
+        </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse d-md-block d-lg-block d-xl-block" id="navbarMenu">
+            <div class="main_menu">
+                <ul class="navbar-nav d-flex flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-teacher"></i> Recruiting
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-calendar-3"></i> Scheduling
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-percentage-square"></i> Accounting Payroll
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-briefcase"></i> Human Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-messages"></i> Communication / IT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-task-square"></i> Compliance/Legal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-truck-fast"></i> Dispatch
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-
     <div class="container-fluid position-relative">
         <div class="backdrop"></div>
-        <div class="d-flex align-content-center mt-3 position-relative z-1">
+        <div class="d-flex align-content-center mt-3 flex-wrap position-relative z-1">
             <div class="side_panel">
                 <div class="text-center">
                     <img src="./assets/images/profile_img.svg" class="rounded" alt="...">
+                </div>
+                <div class="heading">
+                    <h6>GURAD NAME</h6>
+                    <h3>Aaran K Armstrong
+                        <span class="badge rounded-pill text-bg-success">Active</span>
+                    </h3>
+                    <p>Employee No. AA3352</p>
                 </div>
 
                 <ul class="profile_detail">
@@ -270,7 +288,7 @@
             <div class="content_panel">
                 <div class="heading">
                     <h6>GURAD NAME</h6>
-                    <h3>Aaran K Armstrong 
+                    <h3>Aaran K Armstrong
                         <span class="badge rounded-pill text-bg-success">Active</span>
                     </h3>
                     <p>Employee No. AA3352</p>
@@ -312,7 +330,7 @@
                             <p>Post Schedule</p>
                         </div>
                     </div>
-                    
+
 
                     <div class="col-xl-2 col-lg-2 col-md-4 col-12">
                         <div class="white_box">
@@ -350,7 +368,77 @@
                             <p>Hand Book</p>
                         </div>
                     </div>
-                    
+
+                </div>
+                <div class="row gx-5 mt-4 info-container">
+                    <div class="col-6 license-container">
+                        <div class="d-flex align-items-center">
+                            <span>
+                                <img src="./assets/images/police-badge.svg" alt="">
+                            </span>
+                            <span>
+                                <h4>
+                                    License Info
+                                </h4>
+                                <h6>
+                                    549373350
+                                </h6>
+                            </span>
+                        </div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Details</th>
+                                    <th scope="col">License No.</th>
+                                    <th scope="col">Expiry</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SSN</td>
+                                    <td>549373350</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Guard Card</td>
+                                    <td>G 6496196</td>
+                                    <td>May 31, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>State ID</td>
+                                    <td>A399349303</td>
+                                    <td>August 28, 2023</td>
+                                </tr>
+                                <tr>
+                                    <td>Certification of Training Power to Arrest </td>
+                                    <td>N/A</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>Training</td>
+                                    <td>N/A</td>
+                                    <td>Dec 12, 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-6 inbox-container">
+                        <div class="d-flex align-items-center">
+                            <i class="icon-sms-notification"></i>
+                            <h4>Messages</h4>
+                        </div>
+                        <div class="inbox">
+                            <div class="email-img">
+                                <img src="./assets/images/open-email.svg" alt="">
+                            </div>
+                            <h6>
+                                No new message to show
+                            </h6>
+                            <p>
+                                You don’t have any new message from employee
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

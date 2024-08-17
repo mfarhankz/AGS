@@ -257,7 +257,7 @@ footer {
     font-weight: 400;
     line-height: 36px;
     letter-spacing: -0.48px;
-    padding: 15px 0 0 25px;
+    padding: 15px 0 15px 25px;
   }
 }
 
@@ -267,7 +267,7 @@ footer {
   background-color: #21256e;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   // height: 60vh;
-  height: 75vh;
+  height: 70vh;
   position: absolute;
   z-index: 0;
   top: 42px;
@@ -282,7 +282,7 @@ footer {
   padding: 25px 20px;
   margin-left: 25px;
   // height: calc(100vh - 225px);
-  height: calc(100vh - 10px);
+  // height: calc(100vh - 68px);
 
   .rounded {
     border-radius: 50% !important;
@@ -293,7 +293,7 @@ footer {
   .profile_detail {
     padding: 0;
     margin: 25px 0 0 0;
-    height: calc(100% - 228px);
+    height: calc(100% - 300px);
     overflow-x: scroll;
 
     li {
@@ -357,7 +357,7 @@ footer {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 67px;
-  margin-bottom: 25px;
+//   margin-bottom: 25px;
 
   .heading {
     h6 {
@@ -448,7 +448,7 @@ footer {
 }
 
 .license-container {
-  padding: 10px 15px 25px;
+  padding: 15px;
   border-radius: 15px;
   border: 1px #EEB21E;
   background: #EEB21E;
@@ -480,6 +480,7 @@ footer {
   table {
     background: #EEB21E !important;
     margin-top: 30px;
+    margin-bottom: 0;
 
     .table-striped {
       background: #ecc35c !important;
@@ -506,7 +507,7 @@ footer {
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 36px;
+        line-height: 19px;
         letter-spacing: -0.48px;
         border: none !important;
       }
@@ -515,7 +516,7 @@ footer {
 }
 
 .inbox-container {
-  padding: 20px 20px 10px;
+  padding: 15px;
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
@@ -536,7 +537,8 @@ footer {
   }
 
   .inbox {
-    margin-top: 75px;
+    margin-top: 38px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -587,35 +589,11 @@ footer {
   }
 }
 
-.info-container {
-  margin: 0 auto;
-  gap: 2%;
-
-  .col-6 {
-    width: 49%;
-  }
-}
-
-// // Initially hide the menu
-// .navbar-collapse {
-//   display: none;
-//   opacity: 0;
-//   transition: opacity 0.3s ease;
-// }
-
-// // Show the menu when the button or menu is focused
-// .navbar-toggler:focus + .navbar-collapse,
-// .navbar-toggler:focus-within + .navbar-collapse,
-// .navbar-collapse:focus-within {
-//   display: block;
-//   opacity: 1;
-// }
-
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 3000px) {
   .main_menu {
     .navbar-nav li {
-      padding: 8px 10px !important;
+      padding: 8px 20px !important;
     }
   }
 }
@@ -636,80 +614,6 @@ footer {
       font-size: 0 !important;
     }
   }
-
-  // .mobile-menu {
-  //   width: 95% !important;
-  //   border-radius: 10px;
-  //   background: #FFF;
-  //   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
-
-
-
-  //   .navbar-toggler {
-  //     padding: 14px !important;
-  //     width: 100%;
-  //     position: relative;
-  //     z-index: 1;
-
-  //     &:after {
-  //       content: "\59";
-  //       font-family: "ags";
-  //       font-size: 14px;
-  //       display: inline-block;
-  //       margin-left: 0;
-  //       border: none !important;
-  //       top: 12px;
-  //       position: absolute;
-  //       line-height: 24px;
-  //       right: 14px;
-  //     }
-
-  //     span {
-  //       color: #112130;
-  //       font-family: "Hind Madurai";
-  //       font-size: 16px;
-  //       font-style: normal;
-  //       font-weight: 500;
-  //       line-height: normal;
-  //       letter-spacing: -0.32px;
-  //       display: flex;
-  //       align-items: center;
-  //       text-align: center;
-
-  //       i {
-  //         font-size: 18px;
-  //         display: flex;
-  //         margin-right: 10px;
-  //       }
-  //     }
-  //   }
-
-  //   .main_menu {
-  //     box-shadow: none !important;
-
-  //     .navbar-nav {
-  //       align-items: left !important;
-  //       justify-content: start !important;
-  //       flex-direction: column !important;
-
-  //       li {
-  //         margin-left: 0 !important;
-  //         text-align: left !important;
-  //         width: 100%;
-
-  //         &::before {
-  //           display: none !important;
-  //         }
-
-  //         a {
-  //           font-size: 14px !important;
-  //           font-weight: normal;
-  //           padding: 8px 20px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 
 }
 

@@ -12185,7 +12185,7 @@ footer p {
   font-weight: 400;
   line-height: 36px;
   letter-spacing: -0.48px;
-  padding: 15px 0 0 25px;
+  padding: 15px 0 15px 25px;
 }
 
 .backdrop {
@@ -12193,7 +12193,7 @@ footer p {
   width: calc(100% - 30px);
   background-color: #21256e;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  height: 75vh;
+  height: 70vh;
   position: absolute;
   z-index: 0;
   top: 42px;
@@ -12207,7 +12207,6 @@ footer p {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
   padding: 25px 20px;
   margin-left: 25px;
-  height: calc(100vh - 10px);
 }
 .side_panel .rounded {
   border-radius: 50% !important;
@@ -12217,7 +12216,7 @@ footer p {
 .side_panel .profile_detail {
   padding: 0;
   margin: 25px 0 0 0;
-  height: calc(100% - 228px);
+  height: calc(100% - 300px);
   overflow-x: scroll;
 }
 .side_panel .profile_detail li {
@@ -12274,7 +12273,6 @@ footer p {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: 67px;
-  margin-bottom: 25px;
 }
 .content_panel .heading h6, .content_panel .heading .h6 {
   color: #eeb21e;
@@ -12354,7 +12352,7 @@ footer p {
 }
 
 .license-container {
-  padding: 10px 15px 25px;
+  padding: 15px;
   border-radius: 15px;
   border: 1px #EEB21E;
   background: #EEB21E;
@@ -12384,6 +12382,7 @@ footer p {
 .license-container table {
   background: #EEB21E !important;
   margin-top: 30px;
+  margin-bottom: 0;
 }
 .license-container table .table-striped {
   background: #ecc35c !important;
@@ -12408,13 +12407,13 @@ footer p {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 19px;
   letter-spacing: -0.48px;
   border: none !important;
 }
 
 .inbox-container {
-  padding: 20px 20px 10px;
+  padding: 15px;
   border-radius: 15px;
   background: #FFF;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
@@ -12433,7 +12432,8 @@ footer p {
   letter-spacing: -1.92px;
 }
 .inbox-container .inbox {
-  margin-top: 75px;
+  margin-top: 38px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12478,17 +12478,9 @@ footer p {
   margin-top: -13px;
 }
 
-.info-container {
-  margin: 0 auto;
-  gap: 2%;
-}
-.info-container .col-6 {
-  width: 49%;
-}
-
 @media (min-width: 1200px) and (max-width: 3000px) {
   .main_menu .navbar-nav li {
-    padding: 8px 10px !important;
+    padding: 8px 20px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {

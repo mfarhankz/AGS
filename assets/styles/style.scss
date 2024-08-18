@@ -587,10 +587,13 @@ footer {
 
             .navbar-nav {
                 >li {
-                    margin-left: 30px;
+                    margin-left: 24px;
 
                     &::before {
-                        left: -15px;
+                        left: -12px;
+                    }
+                    &:first-child {
+                        margin-left: 0 !important;
                     }
                 }
 

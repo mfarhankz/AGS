@@ -12295,6 +12295,7 @@ footer p {
   flex-direction: column;
   padding: 30px 10px;
   text-align: center;
+  text-decoration: none;
   color: #112130;
   font-size: 16px;
   font-style: normal;
@@ -13021,7 +13022,7 @@ footer p {
     margin: 0;
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
   header .navbar .navbar-nav > li {
     margin-left: 40px;
   }
@@ -13080,10 +13081,10 @@ footer p {
   }
   .main_menu .navbar-nav li {
     margin-left: 0;
-    padding: 8px 10px !important;
+    padding: 8px 20px !important;
   }
   .main_menu .navbar-nav li::before {
-    left: -8px;
+    left: -15px;
   }
   .main_menu .navbar-nav li:first-child {
     margin-left: 0;
@@ -13165,7 +13166,7 @@ footer p {
     margin: 0;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1441px) {
   header .navbar .navbar-nav > li {
     margin-left: 40px;
   }
@@ -13223,11 +13224,15 @@ footer p {
     padding: 0;
   }
   .main_menu .navbar-nav li {
-    margin-left: 40px;
-    padding: 8px 20px !important;
+    margin: 0;
+    padding: 8px 16px !important;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .main_menu .navbar-nav li::before {
-    left: -40px;
+    left: -3px;
   }
   .main_menu .navbar-nav li:first-child {
     margin-left: 0;
@@ -13240,7 +13245,7 @@ footer p {
     width: calc(100% - 30px);
     background-color: #21256e;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 70vh;
+    height: 660px;
     position: absolute;
     z-index: 0;
     top: 42px;

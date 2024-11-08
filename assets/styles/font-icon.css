@@ -3161,3 +3161,18 @@
 .icon-vector:before {
   content: "\e3b2";
 }
+.icon-spinner-solid:before {
+  content: "\e3b2";
+}
+.icon-check-light:before {
+  content: "\e3b3";
+}
+.icon-circle-sharp-solid:before {
+  content: "\e3b4";
+}
+.icon-category:before {
+  content: "\e063";
+}
+.icon-vector:before {
+  content: "\e3b5";
+}

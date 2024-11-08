@@ -366,64 +366,344 @@
                 </ul>
             </div>
             <div class="main_content_panel content_page">
-                <h3>Search Results</h3>
+                <div class="d-flex flex-wrap justify-content-between mb-3">
+                    <h4>Search Results</h4>
+                    <div class="d-flex flex-wrap align-content-center justify-content-center results_header">
+                        <button class="btn btn-success me-2">
+                            Phoenix AZ<i class="icon-xmark-regular ms-2"></i>
+                        </button>
+                        <div class="input-with-icon">
+                            <input class="form-control" placeholder="Search" type="text">
+                            <i class="icon-search-normal-1"></i>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-sm btn-outline-primary d-flex" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="icon-filter-1 me-1 "></i>
+                                Filters
+                                <span
+                                    class="badge text-bg-warning rounded-circle ms-1 d-flex align-items-center px-2">1</span>
+                            </a>
 
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="result_table">
                 <table class="table">
                     <tbody>
                         <tr>
                             <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
-                                <img src="./assets/images/image.svg" alt="">
+                                <img src="./assets/images/jenny.svg" alt="">
                                 <div class="">
                                     <h4 class="mb-0">Jenny Wilson</h4>
-                                    <p class="mb-0 d-flex align-items-center">
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
                                         <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
                                     </p>
                                 </div>
                             </td>
                             <td>
-                                <div>ID Number</div>
-                                <div>AE-6536</div>
+                                <span>ID Number</span>
+                                <p>AE-6536</p>
                             </td>
                             <td>
-                                <div>Placeholder</div>
-                                <div>Phoenix AZ, AGS</div>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
                             </td>
                             <td>
-                                <div>Created Date</div>
-                                <div>02 September 2024</div>
+                                <span>Created Date</span>
+                                <p>02 September 2024</p>
                             </td>
                             <td>
-                                <img src="./assets/images/gun.svg" class="me-1" alt="">
-                                Armed Guard
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
                             </td>
                             <td>
-                                <div>Action</div>
-                                <div>Email Login / Password</div>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
                             </td>
                             <td><i class="icon-menu-1"></i></td>
                         </tr>
                         <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@fat</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/maria.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Maria Hallow</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-8876</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>12 August 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/robert.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Robert Fox</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-1256</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>04 September 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex un-armed align-items-center justify-content-center">
+                                    Un-armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/cameron.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Cameron Williamson</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-7532</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>18 July 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/jenny.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Arlene McCoy</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-8256</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>17 May 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex un-armed  align-items-center justify-content-center ">
+                                    Un-armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/theresa.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Theresa Webb</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-1165</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>05 June 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex un-armed align-items-center justify-content-center">
+                                    Un-armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/annette.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Annette Black</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-8876</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>22 June 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/marvin.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Marvin McKinney</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-1256</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>07 August 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="col-md-3 d-flex align-items-center avatar_container">
+                                <img src="./assets/images/jenny.svg" alt="">
+                                <div class="">
+                                    <h4 class="mb-0">Kathryn Murphy</h4>
+                                    <p class="mb-0 hiring-date d-flex align-items-center">
+                                        <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <span>ID Number</span>
+                                <p>AE-8834</p>
+                            </td>
+                            <td>
+                                <span>Placeholder</span>
+                                <p>Phoenix AZ, AGS</p>
+                            </td>
+                            <td>
+                                <span>Created Date</span>
+                                <p>05 July 2024</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-center lisence">
+                                    <i class="icon-vector me-1"></i>
+                                    Armed Guard
+                                </div>
+                            </td>
+                            <td>
+                                <span>Action</span>
+                                <p><a class="email" href="">Email Login / Password</a></p>
+                            </td>
+                            <td><i class="icon-menu-1"></i></td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="row">
-                    <div class="col-md-3 d-flex align-items-center avatar_container">
-                        <img src="./assets/images/image.svg" alt="">
-                        <div>
-                            <h4 class="mb-0">Jenny Wilson</h4>
-                            <p class="mb-0 d-flex align-items-center">
-                                <i class="icon-check-2 tick me-1"></i> Hired 29/04/2023
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              </div>
+
             </div>
         </div>
 

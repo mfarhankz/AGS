@@ -32,7 +32,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue: #0d6efd !default;
+$blue: #21256e !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
@@ -433,7 +433,7 @@ $body-emphasis-color: $black !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: #246ca8 !default;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
@@ -725,8 +725,8 @@ $mark-bg: $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y: .5rem !default;
-$table-cell-padding-x: .5rem !default;
+$table-cell-padding-y: .86rem !default;
+$table-cell-padding-x: .86rem !default;
 $table-cell-padding-y-sm: .25rem !default;
 $table-cell-padding-x-sm: .25rem !default;
 
@@ -740,7 +740,7 @@ $table-th-font-weight: null !default;
 
 $table-striped-color: $table-color !default;
 $table-striped-bg-factor: .05 !default;
-$table-striped-bg: #ecc35c!default;
+$table-striped-bg: #F4F4F4 !default;
 
 $table-active-color: $table-color !default;
 $table-active-bg-factor: .1 !default;

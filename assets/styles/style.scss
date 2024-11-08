@@ -892,25 +892,58 @@ footer {
     }
   }
 
-  .search-bar {
-    border: 1px solid #1121304d;
-    border-radius: 7px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-
-    input {
+  .input-with-icon {
+    position: relative;
+    .form-control {
       outline: none;
+      border: 1px solid #1121304d;
+      border-radius: 7px;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      padding: 10px 40px 10px 15px;
+      background-color: #fff;
+      width: 220px;
+      background-color: #fff;
+      box-shadow: none;
+    }
+    i {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto 0;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-left: 1px solid rgba(17, 33, 48, 0.3);
+        padding: 0 0 0 20px;
     }
   }
 
-  .primary {
-    background-color: #21256e;
-    padding: 10px 25px;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
+  .select-ui {
+    .form-select {
+        outline: none;
+        border: 1px solid #1121304d;
+        border-radius: 7px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        padding: 10px 40px 10px 15px;
+        background-color: #fff;
+        width: 220px;
+        background-color: #fff;
+        box-shadow: none;
+      }
+  }
+
+  .top-form {
+    .btn-primary {
+        width: 95px;
+    }
   }
 
   .table {
@@ -924,27 +957,27 @@ footer {
     .icon-menu-1 {
       font-size: 22px;
       font-size: 26px;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 26px;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 26px;
     }
   }
 
-  
   table {
     td {
-        &:last-child {
-            position: relative;
-        }
+      &:last-child {
+        position: relative;
+      }
     }
     th {
-        font-weight: 500;
-        padding: 0.5rem 0.86rem;
+      font-weight: 500;
+      padding: 0.5rem 0.86rem;
     }
-    td, th {
+    td,
+    th {
       border: none !important;
       color: #112130;
       white-space: nowrap;

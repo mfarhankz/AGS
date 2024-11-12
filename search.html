@@ -385,7 +385,7 @@
             <div class="main_content_panel content_page">
                 <div class="d-flex flex-wrap justify-content-between mb-3">
                     <h4>Search Results</h4>
-                    <div class="d-flex flex-wrap align-content-center justify-content-center results_header">
+                    <div class="d-flex align-content-center justify-content-center results_header">
                         <button class="btn btn-success me-2 d-none d-lg-block">
                             Phoenix AZ<i class="icon-xmark-regular ms-2"></i>
                         </button>
@@ -393,20 +393,54 @@
                             <input class="form-control" placeholder="Search" type="text">
                             <i class="icon-search-normal-1"></i>
                         </div>
-                        <div class="dropdown m-0">
+                        <!-- <div class="dropdown m-0">
                             <a class="btn btn-outline-secondary d-flex" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="icon-filter-1 me-1 "></i>
+                                <i class="icon-filter-1 me-1 d-flex "></i>
                                 <span class="d-none d-lg-block">Filters</span>
                                 <span
                                     class="badge text-bg-warning rounded-circle ms-1 d-flex align-items-center px-2">1</span>
                             </a>
 
-                            <ul class="dropdown-menu">
+                            <div class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            </div>
+                        </div> -->
+                        <div class="filter-dropdown">
+                            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="icon-filter-1 me-1 d-flex "></i>
+                                <span class="d-none d-lg-block">Filters</span>
+                                <span
+                                    class="badge text-bg-warning rounded-circle ms-1 d-flex align-items-center px-2">1</span>
+                              </button>
+                              <div class="filter-form collapse" id="collapseExample">
+                                <div class="card card-body">
+                                  <h5 class="mb-3">Refine Search Results</h5>
+                                  <div class="mb-3">
+                                    <label for="Names" class="form-label">Names</label>
+                                    <input type="text" id="Names" class="form-control" placeholder="Names">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="status" class="form-label">All Status</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>All Status</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                  </div>
+                                  <div>
+                                    <label for="offices" class="form-label">Offices</label>
+                                    <input type="text" id="offices" class="form-control" placeholder="Offices">
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-center mt-3">
+                                    <button type="button" class="btn btn-warning px-3 me-1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reset</button>
+                                    <button type="button" class="btn btn-primary px-3 ms-1">Apply</button>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>

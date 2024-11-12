@@ -168,7 +168,6 @@ input:-webkit-autofill:active {
   }
   
   .btn-warning {
-    min-width: 100%;
     padding: 0.657rem 0.75rem;
   }
   
@@ -377,6 +376,13 @@ input:-webkit-autofill:active {
 .login-card {
     margin-top: 26px;
     padding: 40px;
+    .btn-warning {
+      min-width: 145px;
+      padding: 0.657rem 0.75rem;
+    }
+    .btn-link {
+      padding: 0.657rem 0;
+    }
   }
   
   .login-copy-rught {
@@ -387,15 +393,6 @@ input:-webkit-autofill:active {
     .form-control {
       padding: 0.594rem 0.75rem;
     }
-  }
-  
-  .btn-warning {
-    min-width: 145px;
-    padding: 0.657rem 0.75rem;
-  }
-  
-  .btn-link {
-    padding: 0.657rem 0;
   }
   
   .my-links {

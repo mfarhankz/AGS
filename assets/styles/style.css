@@ -12333,13 +12333,9 @@ body {
   box-shadow: none !important;
 }
 
-.btn {
+.btn-primary {
   height: 45px;
 }
-.btn:hover {
-  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.25);
-}
-
 .btn-primary:hover {
   background: #272c82;
 }
@@ -12352,6 +12348,7 @@ body {
   display: flex;
   align-items: center;
   background: #fff;
+  height: 45px;
 }
 .btn-outline-secondary i {
   font-size: 20px;
@@ -12364,9 +12361,14 @@ body {
 .dropdown {
   margin-bottom: 15px;
 }
+.dropdown .btn-primary {
+  height: 50px;
+}
+.dropdown .btn-outline-secondary {
+  height: 45px;
+}
 .dropdown .btn {
   font-size: 18px;
-  height: 50px;
 }
 .dropdown .btn::after {
   content: "Y";
@@ -12396,7 +12398,7 @@ body {
   padding: 0;
   border-bottom: 1px #3b408e solid;
 }
-.dropdown .dropdown-menu li.active a {
+.dropdown .dropdown-menu li.active > a {
   background-color: #EEB21E;
 }
 .dropdown .dropdown-menu li a {
@@ -12951,29 +12953,30 @@ footer p {
 .main_side_panel .menu li a:hover {
   background-color: #2d317a;
 }
-.main_side_panel .folder_menu li a[aria-expanded=false] .folder-open {
+
+.folder_menu li a[aria-expanded=false] .folder-open {
   width: 20px;
   height: 20px;
   display: inline-block;
   background: url(../images/folder-2.svg) no-repeat !important;
 }
-.main_side_panel .folder_menu li .folder {
+.folder_menu li .folder {
   width: 20px;
   height: 20px;
   display: inline-block;
   background: url(../images/folder-2.svg) no-repeat;
 }
-.main_side_panel .folder_menu li .folder-open {
+.folder_menu li .folder-open {
   width: 20px;
   height: 20px;
   display: inline-block;
   background: url(../images/folder-open.svg) no-repeat;
 }
-.main_side_panel .folder_menu li ul {
+.folder_menu li ul {
   padding-left: 3px;
   position: relative;
 }
-.main_side_panel .folder_menu li ul::before {
+.folder_menu li ul::before {
   content: "";
   position: absolute;
   width: 1px;
@@ -12985,25 +12988,29 @@ footer p {
   bottom: 0;
   margin: auto;
 }
-.main_side_panel .folder_menu li ul li a {
-  font-size: 14px;
+.folder_menu li ul li a {
+  font-size: 15px !important;
 }
-.main_side_panel .folder_menu li ul li a span {
+.folder_menu li ul li a span {
   width: 156px;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.main_side_panel .folder_menu li ul li a i {
+.folder_menu li ul li a i {
   display: inline-block;
   border: 7px rgba(255, 255, 255, 0.5) solid;
   border-radius: 50px;
   position: relative;
-  top: -1px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   margin-right: 13px;
+  height: 14px;
+  width: 14px;
 }
-.main_side_panel .folder_menu li ul li a i::after {
+.folder_menu li ul li a i::after {
   content: "";
   position: absolute;
   width: 6px;
@@ -13011,7 +13018,7 @@ footer p {
   background: #fff;
   right: -16px;
 }
-.main_side_panel .folder_menu li ul li a i::before {
+.folder_menu li ul li a i::before {
   display: inline-block;
   border: 3px #21256e solid;
   border-radius: 50px;
@@ -13022,6 +13029,15 @@ footer p {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+
+.text-box {
+  border-radius: 10px;
+  border: 1px solid #e9e9f1;
+  background: #fff;
+  padding: 15px;
+  height: 370px;
+  overflow: auto;
 }
 
 .main_content_panel.content_page {
@@ -13229,20 +13245,17 @@ footer p {
 }
 .main_content_panel table td:first-child,
 .main_content_panel table th:first-child {
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
 }
 .main_content_panel table td:last-child,
 .main_content_panel table th:last-child {
-  border-top-right-radius: 6px !important;
-  border-bottom-right-radius: 6px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
   color: #9ba0a7;
 }
-.main_content_panel .results_header .input-with-icon {
-  width: 440px;
-}
 .main_content_panel .results_header .input-with-icon .form-control {
-  width: 431px;
+  width: 365px;
 }
 .main_content_panel .results_header .btn-success {
   background: rgba(238, 178, 30, 0.15);
@@ -13262,69 +13275,6 @@ footer p {
 .main_content_panel .results_header .btn-outline-primary i {
   font-size: 20px;
   display: flex;
-}
-.main_content_panel .result_table table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 6px;
-  background-color: white;
-}
-.main_content_panel .result_table table tr {
-  margin-bottom: 6px;
-  color: white;
-}
-.main_content_panel .result_table table tr:first-child {
-  border-top-left-radius: 6px !important;
-  border-bottom-left-radius: 6px !important;
-}
-.main_content_panel .result_table table tr:last-child {
-  border-top-right-radius: 6px !important;
-  border-bottom-right-radius: 6px !important;
-}
-.main_content_panel .result_table table tr td {
-  padding: 15px 10px;
-  background-color: #f7f7f7;
-  vertical-align: middle;
-}
-.main_content_panel .result_table table tr td span {
-  color: rgba(17, 33, 48, 0.5019607843);
-  font-weight: 500;
-  letter-spacing: -0.48px;
-}
-.main_content_panel .result_table table tr td p {
-  color: #112130;
-  font-weight: 500;
-  letter-spacing: -0.54px;
-  margin: 0px;
-}
-.main_content_panel .result_table table tr td .email {
-  color: #21256e;
-  text-underline-offset: 4px;
-}
-.main_content_panel .result_table table tr td .un-armed {
-  background-color: #cfefdc;
-  padding: 10px 15px;
-  border-radius: 29px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.main_content_panel .result_table table tr td .lisence {
-  background-color: #e4edf9;
-  padding: 5px 15px;
-  border-radius: 29px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.main_content_panel .result_table table tr td .lisence i {
-  display: flex;
-  font-size: 32px;
-}
-.main_content_panel .result_table .hiring-date {
-  background-color: rgba(10, 188, 124, 0.0509803922);
-  padding: 8px 7px;
-  border-radius: 20px;
-  width: -moz-max-content;
-  width: max-content;
 }
 .main_content_panel .profile {
   display: flex;
@@ -13544,6 +13494,88 @@ footer p {
     width: 100px;
     margin-left: auto;
   }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+    display: inline-table;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 10px;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    width: 50%;
+    display: inline-grid;
+  }
+  .result_table table tr td:last-child {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 @media (min-width: 600px) and (max-width: 768px) {
   header .navbar .navbar-brand img {
@@ -13696,6 +13728,88 @@ footer p {
   .top-form .btn-primary {
     width: 95px;
   }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+    display: inline-table;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 10px;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    width: 50%;
+    display: inline-grid;
+  }
+  .result_table table tr td:last-child {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   header .navbar .navbar-brand img {
@@ -13844,6 +13958,88 @@ footer p {
   }
   .top-form .btn-primary {
     width: 95px;
+  }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+    display: inline-table;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 10px;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    width: 50%;
+    display: inline-grid;
+  }
+  .result_table table tr td:last-child {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -14004,6 +14200,89 @@ footer p {
   .top-form .btn-primary {
     width: 95px;
   }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+    display: inline-table;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    width: 50%;
+    display: inline-grid;
+  }
+  .result_table table tr td:last-child {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
   header .navbar .navbar-nav > li {
@@ -14161,6 +14440,78 @@ footer p {
   }
   .top-form .btn-primary {
     width: 95px;
+  }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 @media (min-width: 1441px) {
@@ -14323,5 +14674,77 @@ footer p {
   }
   .top-form .btn-primary {
     width: 95px;
+  }
+  .result_table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .result_table table tr {
+    margin-bottom: 8px;
+    color: white;
+  }
+  .result_table table tr:first-child {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+  .result_table table tr:last-child {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    margin-bottom: 0px;
+  }
+  .result_table table tr td {
+    padding: 15px 10px;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+  }
+  .result_table table tr td h4, .result_table table tr td .h4 {
+    font-weight: 400;
+  }
+  .result_table table tr td span {
+    color: rgba(17, 33, 48, 0.5019607843);
+    font-weight: 400;
+    letter-spacing: -0.48px;
+  }
+  .result_table table tr td p {
+    color: #112130;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    margin: 0px;
+  }
+  .result_table table tr td .email {
+    color: #21256e;
+    text-underline-offset: 4px;
+  }
+  .result_table table tr td .un-armed {
+    background-color: #cfefdc;
+    padding: 10px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence {
+    background-color: #e4edf9;
+    padding: 5px 15px;
+    border-radius: 29px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    font-weight: 500;
+  }
+  .result_table table tr td .lisence i {
+    display: flex;
+    font-size: 25px;
+  }
+  .result_table .hiring-date {
+    background-color: rgba(10, 188, 124, 0.0509803922);
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: -moz-max-content;
+    width: max-content;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -47,12 +47,31 @@ body {
 
 .btn-primary {
   height: 45px;
+
   &:hover {
     background: lighten($color: $primary, $amount: 5);
   }
 }
+
 .btn-warning {
   height: 45px;
+  background: #EEB21E;
+  border: 1px solid #C48F0B;
+  color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  border-radius: 6px;
+
+  i {
+    font-size: 20px;
+    display: flex;
+  }
+
+  &:hover {
+    border: 1px solid #C48F0B;
+  }
 }
 
 .btn-outline-secondary {
@@ -68,6 +87,7 @@ body {
   i {
     font-size: 20px;
   }
+
   &:hover {
     color: #384244;
     background: #f4f4f4;
@@ -76,22 +96,28 @@ body {
 
 .dropdown {
   margin-bottom: 15px;
+
   .btn-primary {
     height: 50px;
   }
+
   .btn-outline-secondary {
     height: 45px;
     padding: 8px;
+
     &::after {
       display: none;
     }
+
     &.show {
       background-color: #fff;
       color: #384244;
     }
   }
+
   .btn {
     font-size: 18px;
+
     .badge {
       position: relative;
       top: 0;
@@ -115,9 +141,11 @@ body {
       border: none !important;
     }
   }
+
   i {
     font-size: 24px;
   }
+
   .dropdown-menu {
     background-color: $primary;
     width: 100%;
@@ -125,26 +153,32 @@ body {
     margin: 0;
     height: 320px;
     overflow: auto;
+
     li {
       padding: 0;
       border-bottom: 1px #3b408e solid;
+
       &.active {
         background-color: $primary;
+
         .nav-link,
         i {
           color: #fff !important;
         }
       }
+
       a {
         color: #fff;
         display: flex;
         text-decoration: none;
         font-size: 18px;
         padding: 10px 12px;
+
         i {
           display: flex;
           margin-right: 10px;
         }
+
         &:hover {
           background-color: #3b408e;
         }
@@ -152,9 +186,11 @@ body {
     }
   }
 }
+
 .filter-dropdown {
   margin-bottom: 0;
   position: relative;
+
   .filter-form {
     width: 300px;
     position: absolute;
@@ -164,8 +200,10 @@ body {
     border-radius: 15px;
     background: #fff;
     box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.2);
+
     .card {
       text-align: left !important;
+
       .form-label {
         margin-bottom: 0;
       }
@@ -182,9 +220,18 @@ body {
 }
 
 .btn_dropdown {
+
   &:hover,
   &:active {
     color: $primary !important;
+  }
+}
+
+.table_edit {
+  i {
+    font-size: 22px !important;
+    color: $primary;
+    opacity: 0.5;
   }
 }
 
@@ -196,6 +243,7 @@ header {
 
   .navbar {
     padding: 3px 0;
+
     .dropdown {
       margin: 0;
     }
@@ -205,13 +253,32 @@ header {
       margin: 0;
     }
 
+    .header_page {
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: 28px;
+        display: flex;
+        margin-inline: 20px;
+        color: $primary;
+        opacity: 0.5;
+      }
+
+      span {
+        color: $primary;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+
     .navbar-nav {
       list-style: none !important;
       padding: 0;
       flex-direction: row;
       align-items: center;
 
-      > li {
+      >li {
         position: relative;
 
         &::before {
@@ -230,6 +297,15 @@ header {
           &::before {
             display: none;
           }
+        }
+      }
+
+      .header_icon {
+        font-size: 24px;
+        color: $primary;
+
+        &:hover {
+          color: $primary;
         }
       }
 
@@ -265,12 +341,14 @@ header {
 
       .login_btn {
         padding-right: 20px;
+
         i {
           color: #112130;
           font-size: 18px;
           margin-right: 5px;
           margin-top: 5px;
         }
+
         a {
           text-decoration: none !important;
           font-size: 18px;
@@ -314,11 +392,13 @@ header {
 
       .dropdown-menu {
         height: auto;
+
         li {
           &:last-child {
             border-bottom: none !important;
           }
         }
+
         a {
           color: #112130;
           font-family: "Hind Madurai";
@@ -329,6 +409,7 @@ header {
           &:active {
             background-color: transparent;
           }
+
           &:hover {
             color: #fff;
           }
@@ -347,6 +428,7 @@ header {
     }
   }
 }
+
 .nav_manu {
   background-color: #fff !important;
   color: $primary !important;
@@ -356,14 +438,17 @@ header {
     .nav-item {
       .nav-link {
         color: $primary !important;
+
         &:hover {
           color: #fff !important;
           background-color: transparent !important;
         }
       }
+
       &:hover {
         color: #ffffff !important;
       }
+
       &:active {
         color: #ffffff !important;
       }
@@ -830,8 +915,9 @@ footer {
     height: 100%;
     overflow: auto;
 
-    > li {
+    >li {
       &:first-child {
+
         a,
         a:hover {
           border-radius: 15px 15px 0 0;
@@ -991,29 +1077,36 @@ footer {
   border-radius: 15px;
   width: 100%;
   display: inline-block;
+
   .employee-detail {
     background-color: #21256e0a;
   }
+
   h5 {
     font-size: 18px;
   }
 
   table {
     border: 1px solid #e9e9f1;
+
     thead {
       background-color: #f7f7fa;
     }
+
     td,
     th {
       border: none;
     }
   }
+
   .dropend:focus-visible {
     outline: none;
   }
+
   .dropend {
     background-color: #eeb21e80;
   }
+
   .all-items {
     li {
       border-bottom: 1px solid #21256e1a;
@@ -1021,16 +1114,20 @@ footer {
       padding: 8px;
     }
   }
+
   .miscellaneous {
     table {
       border: 1px solid #e9e9f1;
+
       thead {
         background-color: #21256e1a;
       }
+
       td,
       th {
         border: 1px solid #21256e1a;
         vertical-align: middle;
+
         span {
           border: 1px solid rgba(17, 33, 48, 0.3);
           color: #112130;
@@ -1038,6 +1135,23 @@ footer {
           border-radius: 6px;
         }
       }
+    }
+  }
+}
+
+.page_container {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px rgba(17, 33, 48, 0.14) solid;
+  border-radius: 15px;
+
+  .user_page {
+    font-size: 20px;
+    color: $primary;
+
+    strong {
+      font-weight: 500;
     }
   }
 }
@@ -1271,6 +1385,7 @@ footer {
       height: 26px;
     }
   }
+
   .transfer-table {
     table {
       td {
@@ -1377,6 +1492,7 @@ footer {
     border-radius: 10px;
     padding: 12px 16px;
     align-items: center;
+
     img {
       height: 40px;
       width: 40px;
@@ -1408,7 +1524,7 @@ footer {
       }
 
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 24px;
 
           &::before {
@@ -1485,6 +1601,16 @@ footer {
           }
         }
       }
+    }
+  }
+
+  .page_container {
+    .back {
+      display: none;
+    }
+
+    .user_page {
+      font-size: 18px;
     }
   }
 
@@ -1598,10 +1724,19 @@ footer {
   .results_header {
     width: 100%;
   }
+  .mobile-btn-row {
+    width: 100%;
+  }
 
+  .mobile-btn-row > * {
+    flex: 1 1 0;
+    margin: 2px; 
+  }
+  
   .input-with-icon {
-    width: calc(100% - 75px);
-    margin-right: 8px;
+    // width: calc(100% - 75px);
+    width: 100%;
+    // margin-right: 8px;
 
     .form-control {
       width: 100%;
@@ -1734,7 +1869,7 @@ footer {
       }
 
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 30px;
 
           &::before {
@@ -1808,6 +1943,24 @@ footer {
         }
       }
     }
+  }
+
+  .page_container {
+    .back {
+      display: none;
+    }
+
+    .user_page {
+      font-size: 18px;
+    }
+  }
+  .mobile-btn-row {
+    width: 100%;
+  }
+
+  .mobile-btn-row > * {
+    flex: 1 1 0;
+    margin: 2px; 
   }
 
   .main_content_panel {
@@ -1911,7 +2064,6 @@ footer {
       }
     }
   }
-
   .main_content_panel {
     width: 100%;
   }
@@ -1965,7 +2117,6 @@ footer {
 
         td {
           padding: 15px 10px;
-
           vertical-align: middle;
           width: 50%;
           display: inline-grid;
@@ -2044,7 +2195,7 @@ footer {
       }
 
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 30px;
 
           &::before {
@@ -2344,7 +2495,7 @@ footer {
   header {
     .navbar {
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 40px;
 
           &::before {
@@ -2653,7 +2804,7 @@ footer {
   header {
     .navbar {
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 40px;
 
           &::before {
@@ -2675,6 +2826,7 @@ footer {
             line-height: 19px;
           }
         }
+
         &:hover {
           color: #fff !important;
         }
@@ -2724,6 +2876,7 @@ footer {
       .dropdown-toggle {
         display: none;
       }
+
       // .nav_manu {
       //   background-color: #fff !important;
       //   color: $primary !important;
@@ -2982,7 +3135,7 @@ footer {
   header {
     .navbar {
       .navbar-nav {
-        > li {
+        >li {
           margin-left: 40px;
 
           &::before {

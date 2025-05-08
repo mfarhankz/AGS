@@ -12341,8 +12341,8 @@ body {
 
 .btn-warning {
   height: 45px;
-  background: #EEB21E;
-  border: 1px solid #C48F0B;
+  background: #eeb21e;
+  border: 1px solid #c48f0b;
   color: #21256e;
   display: flex;
   align-items: center;
@@ -12355,7 +12355,7 @@ body {
   display: flex;
 }
 .btn-warning:hover {
-  border: 1px solid #C48F0B;
+  border: 1px solid #c48f0b;
 }
 
 .btn-outline-secondary {
@@ -12491,6 +12491,230 @@ body {
   font-size: 22px !important;
   color: #21256e;
   opacity: 0.5;
+}
+
+.schedule_container label {
+  color: #112130;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+}
+.schedule_container .schedule_select {
+  width: 200px !important;
+  position: relative;
+  margin-bottom: 5px;
+}
+.schedule_container .schedule_select .form-select {
+  font-size: 14px;
+}
+.schedule_container .schedule_input {
+  width: 190px !important;
+  margin-bottom: 5px;
+}
+.schedule_container .btn_container {
+  margin-top: 21px;
+}
+.schedule_container .btn_container button {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.schedule_container .btn_container .btn-warning::after {
+  display: none !important;
+}
+
+.custom_data {
+  overflow-x: scroll;
+}
+.custom_data .custom_data_head {
+  background-color: #21256e;
+  color: white;
+  display: inline-flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.custom_data .custom_data_head div {
+  padding: 10px;
+  padding-right: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.custom_data .custom_data_head div:last-child {
+  border-right: none;
+}
+.custom_data .custom_data_body {
+  display: flex;
+}
+.custom_data .custom_data_body div {
+  padding-inline: 10px;
+  padding-block: 12px;
+  border: 1px solid #e7e9ea;
+  border-right: 1px solid #e9e9f0;
+  color: #112130;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom_data .custom_data_body .shift {
+  font-size: 14px;
+}
+.custom_data .custom_data_body .job_designation {
+  padding-inline: 0;
+}
+.custom_data .custom_data_body .completed {
+  background: rgba(2, 90, 58, 0.13);
+  font-weight: 600;
+  font-size: 16px;
+}
+.custom_data .custom_data_body .no_shift {
+  font-size: 12px;
+  font-weight: 400;
+  background: url(../images/no-shift-bg.svg) no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.custom_data .custom_data_body .no_shift_text {
+  z-index: 2;
+  color: black;
+  width: 70px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom_data .custom_data_body .temp {
+  background: rgba(162, 135, 250, 0.15);
+  font-weight: 500;
+  font-size: 14px;
+}
+.custom_data .custom_data_body .vacant {
+  font-size: 14px;
+}
+.custom_data .custom_data_body .check_in {
+  background: rgba(241, 74, 74, 0.14);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.custom_data .custom_data_body .assiged {
+  background: rgba(238, 178, 30, 0.11);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.custom_data .location_box {
+  background-color: #f3f4f5;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom_data .location_box .location_text {
+  min-width: 500px;
+  color: #112130;
+}
+.custom_data .location_box .location_text strong {
+  font-weight: 600;
+}
+.custom_data .location_box i {
+  font-size: 20px;
+}
+.custom_data .location_box .colors_box {
+  display: flex;
+  align-items: center;
+  min-width: 550px;
+}
+.custom_data .location_box .colors_box div {
+  margin: 0 10px;
+}
+.custom_data .location_box .colors_box .color_text {
+  color: #112130;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.12px;
+}
+.custom_data .location_box .colors_box .assiged_box::before {
+  content: " ";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #fdf7e6;
+  border: 1px solid #eeb21e;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.custom_data .location_box .colors_box .vacant_box::before {
+  content: " ";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.custom_data .location_box .colors_box .temp_box::before {
+  content: " ";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #f1edfe;
+  border: 1px solid #a287fa;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.custom_data .location_box .colors_box .completed_box::before {
+  content: " ";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #dee9e5;
+  border: 1px solid #025a3a;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.custom_data .location_box .colors_box .check_in_box::before {
+  content: " ";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #fde6e6;
+  border: 1px solid #f14a4a;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.custom_data .post {
+  min-width: 185px;
+}
+.custom_data .shift {
+  min-width: 150px;
+}
+.custom_data .start {
+  min-width: 65px;
+  text-align: center;
+  padding-inline: 0;
+}
+.custom_data .end {
+  min-width: 60px;
+  text-align: center;
+  padding-inline: 0;
+}
+.custom_data .job_designation {
+  min-width: 135px;
+}
+.custom_data .day {
+  min-width: 160px;
+  text-align: center;
+  padding-inline: 0;
 }
 
 header {
@@ -13262,6 +13486,9 @@ footer p {
 .page_container .user_page strong {
   font-weight: 500;
 }
+.page_container .user_page .btn-primary {
+  font-size: 14px !important;
+}
 
 .main_content_panel.content_page {
   padding: 20px;
@@ -13616,6 +13843,18 @@ footer p {
   .page_container .user_page {
     font-size: 18px;
   }
+  .page_container .user_page strong {
+    font-size: 16px;
+  }
+  .page_container .user_page button {
+    font-size: 14px !important;
+  }
+  .schedule_menu {
+    flex-direction: column !important;
+  }
+  .schedule_menu .schedule_select {
+    width: 100% !important;
+  }
   .main_menu {
     padding: 0;
   }
@@ -13875,6 +14114,12 @@ footer p {
   }
   .page_container .user_page {
     font-size: 18px;
+  }
+  .page_container .user_page strong {
+    font-size: 16px;
+  }
+  .page_container .user_page button {
+    font-size: 14px !important;
   }
   .mobile-btn-row {
     width: 100%;

@@ -12318,6 +12318,10 @@ body {
   box-shadow: none !important;
 }
 
+.fz_14 {
+  font-size: 14px !important;
+}
+
 .form-select {
   width: 100%;
   color: #112130;
@@ -12523,8 +12527,14 @@ body {
   display: none !important;
 }
 
-.custom_data {
+.custom_data_container {
   overflow-x: scroll;
+  width: 100%;
+  display: flex;
+}
+
+.custom_data {
+  border-bottom: 1px solid #d2dcd9;
 }
 .custom_data .custom_data_head {
   background-color: #21256e;
@@ -12547,14 +12557,20 @@ body {
 .custom_data .custom_data_body div {
   padding-inline: 10px;
   padding-block: 12px;
-  border: 1px solid #e7e9ea;
-  border-right: 1px solid #e9e9f0;
+  border-top: 1px solid #d2dcd9;
+  border-right: 1px solid #d2dcd9;
   color: #112130;
   font-weight: 400;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.custom_data .custom_data_body div:last-child {
+  border-right: 1px solid #f3f4f5 !important;
+}
+.custom_data .custom_data_body div:first-child {
+  border-left: 1px solid #f3f4f5;
 }
 .custom_data .custom_data_body .shift {
   font-size: 14px;
@@ -12564,13 +12580,14 @@ body {
 }
 .custom_data .custom_data_body .completed {
   background: rgba(2, 90, 58, 0.13);
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
 }
 .custom_data .custom_data_body .no_shift {
   font-size: 12px;
   font-weight: 400;
   background: url(../images/no-shift-bg.svg) no-repeat center center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12592,18 +12609,18 @@ body {
   font-size: 14px;
 }
 .custom_data .custom_data_body .vacant {
-  font-size: 14px;
+  font-size: 12px;
 }
 .custom_data .custom_data_body .check_in {
   background: rgba(241, 74, 74, 0.14);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
 }
 .custom_data .custom_data_body .assiged {
   background: rgba(238, 178, 30, 0.11);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
 }
 .custom_data .location_box {
@@ -12692,27 +12709,25 @@ body {
   margin-bottom: -2px;
   margin-right: 5px;
 }
+.custom_data .schedule_menu {
+  border: none !important;
+}
 .custom_data .post {
-  min-width: 185px;
+  width: 200px;
 }
 .custom_data .shift {
-  min-width: 150px;
+  width: 197px;
 }
 .custom_data .start {
-  min-width: 65px;
-  text-align: center;
-  padding-inline: 0;
-}
-.custom_data .end {
-  min-width: 60px;
+  width: 80px;
   text-align: center;
   padding-inline: 0;
 }
 .custom_data .job_designation {
-  min-width: 135px;
+  width: 155px;
 }
 .custom_data .day {
-  min-width: 160px;
+  width: 190px;
   text-align: center;
   padding-inline: 0;
 }
@@ -13290,7 +13305,7 @@ footer p {
   width: 210px;
   margin-right: 16px;
   border-radius: 15px;
-  height: 87vh;
+  height: 83vh;
 }
 .main_side_panel ul {
   list-style: none;

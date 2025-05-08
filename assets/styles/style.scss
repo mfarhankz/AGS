@@ -30,7 +30,9 @@ body {
   background-color: #fff !important;
   box-shadow: none !important;
 }
-
+.fz_14 {
+  font-size: 14px !important;
+}
 .form-select {
   width: 100%;
   color: #112130;
@@ -274,8 +276,14 @@ body {
   }
 }
 
-.custom_data {
+.custom_data_container {
   overflow-x: scroll;
+  width: 100%;
+  display: flex;
+}
+
+.custom_data {
+  border-bottom: 1px solid #d2dcd9;
 
   .custom_data_head {
     background-color: $primary;
@@ -302,14 +310,24 @@ body {
     div {
       padding-inline: 10px;
       padding-block: 12px;
-      border: 1px solid #e7e9ea;
-      border-right: 1px solid #e9e9f0;
+      border-top: 1px solid #d2dcd9;
+      // border-bottom: 1px solid #d2dcd9;
+      border-right: 1px solid #d2dcd9;
+      // border-left: 1px solid #d2dcd9;
       color: #112130;
       font-weight: 400;
       font-size: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &:last-child {
+        border-right: 1px solid #f3f4f5 !important;
+      }
+
+      &:first-child {
+        border-left: 1px solid #f3f4f5;
+      }
     }
 
     .shift {
@@ -322,14 +340,15 @@ body {
 
     .completed {
       background: rgba(2, 90, 58, 0.13);
-      font-weight: 600;
-      font-size: 16px;
+      font-weight: 500;
+      font-size: 14px;
     }
 
     .no_shift {
       font-size: 12px;
       font-weight: 400;
       background: url(../images/no-shift-bg.svg) no-repeat center center;
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -354,20 +373,20 @@ body {
     }
 
     .vacant {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .check_in {
       background: rgba(241, 74, 74, 0.14);
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 22px;
     }
 
     .assiged {
       background: rgba(238, 178, 30, 0.11);
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 22px;
     }
   }
@@ -480,32 +499,30 @@ body {
     }
   }
 
+  .schedule_menu {
+    border: none !important;
+  }
+
   .post {
-    min-width: 185px;
+    width: 200px;
   }
 
   .shift {
-    min-width: 150px;
+    width: 197px;
   }
 
   .start {
-    min-width: 65px;
-    text-align: center;
-    padding-inline: 0;
-  }
-
-  .end {
-    min-width: 60px;
+    width: 80px;
     text-align: center;
     padding-inline: 0;
   }
 
   .job_designation {
-    min-width: 135px;
+    width: 155px;
   }
 
   .day {
-    min-width: 160px;
+    width: 190px;
     text-align: center;
     padding-inline: 0;
   }
@@ -1182,7 +1199,7 @@ footer {
   width: 210px;
   margin-right: 16px;
   border-radius: 15px;
-  height: 87vh;
+  height: 83vh;
 
   ul {
     list-style: none;
